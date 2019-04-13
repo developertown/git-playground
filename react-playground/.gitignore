@@ -63,5 +63,6 @@ typings/
 dist
 coverage
 \.DS_Store
+node_modules/
 
 TEST-REPORT\.xml
