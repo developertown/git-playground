@@ -2,6 +2,8 @@ import React from 'react';
 
 import './styles';
 
-export default function Test() {
-  return <>A new component named: Test</>;
-}
+const Test = () => {
+  return <h1>A new component named: Test</h1>;
+};
+
+export default Test;

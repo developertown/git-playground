@@ -7,6 +7,8 @@ import { RouteListener } from './components/route-listener';
 import DebugInfo from './components/debug-info';
 import RootRoute from './routes/root';
 
+import Test from "./components/test";
+
 interface IProps {
   initialState: any;
   entryComponent?: React.ComponentType;
@@ -28,6 +30,7 @@ export default function Application({ initialState, history, entryComponent }: I
         <RouteListener />
         <ScrollToTop>
           <Component />
+          <Test/>
         </ScrollToTop>
         <DebugInfo />
       </>
