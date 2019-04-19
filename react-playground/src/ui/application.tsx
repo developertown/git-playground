@@ -31,7 +31,7 @@ export default function Application({ initialState, history, entryComponent }: I
         <ScrollToTop>
           <Component />
           <Test />
-          <Heath />
+          <Heath name="Heath" />
         </ScrollToTop>
         <DebugInfo />
       </>

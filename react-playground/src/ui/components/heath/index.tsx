@@ -2,6 +2,10 @@ import React from 'react';
 
 import './styles';
 
-export default function Heath() {
-  return <h4 className="fuuuuuuuck you">A new component named: Heath</h4>;
+interface Props {
+  name?: string;
+}
+
+export default function Heath({name}: Props) {
+  return <h4 className="hey you">A new component named: {name}</h4>;
 }
