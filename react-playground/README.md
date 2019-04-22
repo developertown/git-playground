@@ -6,8 +6,7 @@ From inside the 'react-playground" folder:
 
 1. Run `yarn`
 1. Run `yarn start:dev`
-1. Open a browser tab and go to: [localhost:8081](localhost:8081)
-
+1. Open a browser tab and go to: [localhost:8080](localhost:8080)
 
 ##Installing the React CLI
 
@@ -15,7 +14,6 @@ From inside the 'react-playground" folder:
 
 1. Run `yarn global add @developertown/react-cli`
 1. Run `yarn global add ember-cli`
-
 
 ##To Generate a component
 
