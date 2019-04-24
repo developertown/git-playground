@@ -8,6 +8,7 @@ import DebugInfo from './components/debug-info';
 import RootRoute from './routes/root';
 
 import Test from "./components/test";
+import Lauren from "./components/lauren";
 
 interface IProps {
   initialState: any;
@@ -31,6 +32,7 @@ export default function Application({ initialState, history, entryComponent }: I
         <ScrollToTop>
           <Component />
           <Test/>
+          <Lauren/>
         </ScrollToTop>
         <DebugInfo />
       </>
