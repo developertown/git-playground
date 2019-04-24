@@ -7,6 +7,7 @@ import { RouteListener } from './components/route-listener';
 import DebugInfo from './components/debug-info';
 import RootRoute from './routes/root';
 
+import Jpope from './components/jpope';
 import Josh from './components/josh';
 import Test from './components/test';
 
@@ -31,8 +32,9 @@ export default function Application({ initialState, history, entryComponent }: I
         <RouteListener />
         <ScrollToTop>
           <Component />
-          <Josh />
           <Test />
+          <Josh />
+          <Jpope name='Jeff' />
         </ScrollToTop>
         <DebugInfo />
       </>
