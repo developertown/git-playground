@@ -7,7 +7,8 @@ import { RouteListener } from './components/route-listener';
 import DebugInfo from './components/debug-info';
 import RootRoute from './routes/root';
 
-import Test from "./components/test";
+import Josh from './components/josh';
+import Test from './components/test';
 
 interface IProps {
   initialState: any;
@@ -30,7 +31,8 @@ export default function Application({ initialState, history, entryComponent }: I
         <RouteListener />
         <ScrollToTop>
           <Component />
-          <Test/>
+          <Josh />
+          <Test />
         </ScrollToTop>
         <DebugInfo />
       </>
