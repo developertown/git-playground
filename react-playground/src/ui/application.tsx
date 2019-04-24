@@ -6,8 +6,8 @@ import { ScrollToTop } from '~/utils/routing';
 import { RouteListener } from './components/route-listener';
 import DebugInfo from './components/debug-info';
 import RootRoute from './routes/root';
-
-import Test from "./components/test";
+import Test from './components/test';
+import Jpope from './components/jpope';
 
 interface IProps {
   initialState: any;
@@ -30,7 +30,8 @@ export default function Application({ initialState, history, entryComponent }: I
         <RouteListener />
         <ScrollToTop>
           <Component />
-          <Test/>
+          <Test />
+          <Jpope name="Jeff" />
         </ScrollToTop>
         <DebugInfo />
       </>
