@@ -1,0 +1,408 @@
+$color-button: #f8f9fa;
+$color-button-text: #212529;
+$color-primary: #2979ff;
+$color-secondary: #008080;
+$color-success: #43a047;
+$color-warning: #ffa500;
+$color-danger: #f44336;
+
+button,
+.btn,
+[type='button'],
+[type='reset'],
+[type='submit'],
+[role='button'] {
+  color: $color-button-text;
+  background-color: $color-button;
+  //background-color: $color-button;
+  border: 1px solid transparent;
+  /* margin: 0.75rem; */
+  /* border-radius: 0.25rem; */
+  /* transition: background 250ms ease-in-out,  */
+  /* transform 150ms ease; */
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &:hover {
+    background-color: darken($color-button, 4%);
+  }
+
+  &:active {
+    transform: scale(0.99);
+    background-color: darken($color-button, 8%);
+  }
+
+  &:focus {
+    -moz-box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+  }
+
+  &.block {
+    display: block;
+  }
+
+  &.primary {
+    color: $color-primary;
+    background-color: #dce9ff;
+
+    &:hover {
+      background-color: darken(#dce9ff, 4%);
+    }
+
+    &:active {
+      background-color: darken(#dce9ff, 8%);
+    }
+  }
+
+  &.secondary {
+    color: $color-secondary;
+    background-color: #d6eaea;
+
+    &:hover {
+      background-color: darken(#d6eaea, 4%);
+    }
+
+    &:active {
+      background-color: darken(#d6eaea, 8%);
+    }
+  }
+
+  &.success {
+    color: $color-success;
+    background-color: #baebba;
+
+    &:hover {
+      background-color: darken(#baebba, 4%);
+    }
+
+    &:active {
+      background-color: darken(#baebba, 8%);
+    }
+  }
+
+  &.warning {
+    color: $color-warning;
+    background-color: #fff0d6;
+
+    &:hover {
+      background-color: darken(#fff0d6, 4%);
+    }
+
+    &:active {
+      background-color: darken(#fff0d6, 8%);
+    }
+  }
+
+  &.danger {
+    color: $color-danger;
+    background-color: #fde1df;
+
+    &:hover {
+      background-color: darken(#fde1df, 4%);
+    }
+
+    &:hover {
+      background-color: darken(#fde1df, 8%);
+    }
+  }
+
+  /* Filled */
+  &.filled {
+    color: #fff;
+    background-color: $color-button-text;
+
+    &:hover {
+      background-color: darken($color-button-text, 8%);
+    }
+
+    &:active {
+      background-color: darken($color-button-text, 12%);
+    }
+
+    /* Filled Primary */
+    &.primary {
+      background-color: $color-primary;
+
+      &:hover {
+        background-color: darken($color-primary, 8%);
+      }
+
+      &:active {
+        background-color: darken($color-primary, 12%);
+      }
+    }
+
+    /* Filled Secondary */
+    &.secondary {
+      background-color: $color-secondary;
+
+      &:hover {
+        background-color: darken($color-secondary, 8%);
+      }
+
+      &:active {
+        background-color: darken($color-secondary, 12%);
+      }
+    }
+
+    /* Filled Success */
+    &.success {
+      background-color: $color-success;
+
+      &:hover {
+        background-color: darken($color-success, 8%);
+      }
+
+      &:active {
+        background-color: darken($color-success, 12%);
+      }
+    }
+
+    /* Filled Warning */
+    &.warning {
+      background-color: $color-warning;
+
+      &:hover {
+        background-color: darken($color-warning, 8%);
+      }
+
+      &:active {
+        background-color: darken($color-warning, 12%);
+      }
+    }
+
+    /* Filled Danger */
+    &.danger {
+      background-color: $color-danger;
+
+      &:hover {
+        background-color: darken($color-danger, 8%);
+      }
+
+      &:active {
+        background-color: darken($color-danger, 12%);
+      }
+    }
+  }
+
+  /* Link */
+  &.link {
+    color: $color-button-text;
+    background-color: transparent;
+    border-color: transparent;
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+      background-color: transparent;
+    }
+
+    &:hover {
+      color: darken($color-button-text, 8%);
+    }
+
+    &:active {
+      color: darken($color-button-text, 12%);
+    }
+
+    /* Link Primary */
+    &.primary {
+      color: $color-primary;
+
+      &:hover {
+        color: darken($color-primary, 8%);
+      }
+
+      &:active {
+        color: darken($color-primary, 12%);
+      }
+    }
+
+    /* Link Secondary */
+    &.secondary {
+      color: $color-secondary;
+
+      &:hover {
+        color: darken($color-secondary, 8%);
+      }
+
+      &:active {
+        color: darken($color-secondary, 12%);
+      }
+    }
+
+    /* Link Success */
+    &.success {
+      color: $color-success;
+
+      &:hover {
+        color: darken($color-success, 8%);
+      }
+
+      &:active {
+        color: darken($color-success, 12%);
+      }
+    }
+
+    /* Link Warning */
+    &.warning {
+      color: $color-warning;
+
+      &:hover {
+        color: darken($color-warning, 8%);
+      }
+
+      &:active {
+        color: darken($color-warning, 12%);
+      }
+    }
+
+    /* Link Danger */
+    &.danger {
+      color: $color-danger;
+
+      &:hover {
+        color: darken($color-danger, 8%);
+      }
+
+      &:active {
+        color: darken($color-danger, 12%);
+      }
+    }
+  }
+
+  /* Outline */
+  &.outline {
+    color: $color-button-text;
+    border-color: $color-button-text;
+    background-color: transparent;
+
+    &:hover {
+      background-color: rgba($color-button-text, 0.08);
+    }
+
+    &:active {
+      background-color: rgba($color-button-text, 0.12);
+    }
+
+    /* Outline Primary */
+    &.primary {
+      color: $color-primary;
+      border-color: $color-primary;
+
+      &:hover {
+        background-color: rgba($color-primary, 0.08);
+      }
+
+      &:active {
+        background-color: rgba($color-primary, 0.12);
+      }
+    }
+
+    /* Outline Secondary */
+    &.secondary {
+      color: $color-secondary;
+      border-color: $color-secondary;
+
+      &:hover {
+        background-color: rgba($color-secondary, 0.08);
+      }
+
+      &:active {
+        background-color: rgba($color-secondary, 0.12);
+      }
+    }
+
+    /* Outline Success  */
+    &.success {
+      color: $color-success;
+      border-color: $color-success;
+
+      &:hover {
+        background-color: rgba($color-success, 0.08);
+      }
+
+      &:active {
+        background-color: rgba($color-success, 0.12);
+      }
+    }
+
+    /* Outline Warning  */
+    &.warning {
+      color: $color-warning;
+      border-color: $color-warning;
+
+      &:hover {
+        background-color: rgba($color-warning, 0.08);
+      }
+
+      &:active {
+        background-color: rgba($color-warning, 0.12);
+      }
+    }
+
+    /* Outline Danger  */
+    &.danger {
+      color: $color-danger;
+      border-color: $color-danger;
+
+      &:hover {
+        background-color: rgba($color-danger, 0.08);
+      }
+
+      &:active {
+        background-color: rgba(($color-danger), 0.12);
+      }
+    }
+  }
+}
+
+button:not(:disabled) .btn:not(.disabled),
+[type='button']:not(:disabled),
+[type='reset']:not(:disabled),
+[type='submit']:not(:disabled) {
+  cursor: pointer;
+}
+
+/* Use for Toggle Buttons */
+button.pressed,
+.btn.pressed,
+[type='button'].pressed,
+[role='button'].pressed,
+button[aria-pressed='true'],
+.btn[aria-pressed='true'],
+[type='button'][aria-pressed='true'],
+[role='button'][aria-pressed='true'] {
+  background-color: #e2e6ea;
+}
+
+button:disabled,
+.btn.disabled,
+[role='button'].disabled,
+[type='button']:disabled,
+[type='reset']:disabled,
+[type='submit']:disabled,
+[role='button']:disabled {
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+button.block,
+[type='button'].block,
+[type='reset'].block,
+[type='submit'].block {
+  width: 100%;
+}
+
+a.btn,
+a[role='button'] {
+  text-decoration: none;
+}
