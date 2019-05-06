@@ -1,10 +1,15 @@
 $color-button: #f8f9fa;
 $color-button-text: #212529;
 $color-primary: #2979ff;
+$color-primary-bg: #dce9ff;
 $color-secondary: #008080;
+$color-secondary-bg: #d6eaea;
 $color-success: #43a047;
+$color-success-bg: #baebba;
 $color-warning: #ffa500;
+$color-warning-bg: #fff0d6;
 $color-danger: #f44336;
+$color-danger-bg: #fde1df;
 
 button,
 .btn,
@@ -29,6 +34,10 @@ button,
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 
   &:hover {
     background-color: darken($color-button, 4%);
@@ -51,66 +60,66 @@ button,
 
   &.primary {
     color: $color-primary;
-    background-color: #dce9ff;
+    background-color: $color-primary-bg;
 
     &:hover {
-      background-color: darken(#dce9ff, 4%);
+      background-color: darken($color-primary-bg, 4%);
     }
 
     &:active {
-      background-color: darken(#dce9ff, 8%);
+      background-color: darken($color-primary-bg, 8%);
     }
   }
 
   &.secondary {
     color: $color-secondary;
-    background-color: #d6eaea;
+    background-color: $color-secondary-bg;
 
     &:hover {
-      background-color: darken(#d6eaea, 4%);
+      background-color: darken($color-secondary-bg, 4%);
     }
 
     &:active {
-      background-color: darken(#d6eaea, 8%);
+      background-color: darken($color-secondary-bg, 8%);
     }
   }
 
   &.success {
     color: $color-success;
-    background-color: #baebba;
+    background-color: $color-success-bg;
 
     &:hover {
-      background-color: darken(#baebba, 4%);
+      background-color: darken($color-success-bg, 4%);
     }
 
     &:active {
-      background-color: darken(#baebba, 8%);
+      background-color: darken($color-success-bg, 8%);
     }
   }
 
   &.warning {
     color: $color-warning;
-    background-color: #fff0d6;
+    background-color: $color-warning-bg;
 
     &:hover {
-      background-color: darken(#fff0d6, 4%);
+      background-color: darken($color-warning-bg, 4%);
     }
 
     &:active {
-      background-color: darken(#fff0d6, 8%);
+      background-color: darken($color-warning-bg, 8%);
     }
   }
 
   &.danger {
     color: $color-danger;
-    background-color: #fde1df;
+    background-color: $color-danger-bg;
 
     &:hover {
-      background-color: darken(#fde1df, 4%);
+      background-color: darken($color-danger-bg, 4%);
     }
 
     &:hover {
-      background-color: darken(#fde1df, 8%);
+      background-color: darken($color-danger-bg, 8%);
     }
   }
 
@@ -372,6 +381,18 @@ button:not(:disabled) .btn:not(.disabled),
   cursor: pointer;
 }
 
+button:disabled,
+.btn.disabled,
+[role='button'].disabled,
+[type='button']:disabled,
+[type='reset']:disabled,
+[type='submit']:disabled,
+[role='button']:disabled {
+  pointer-events: none;
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
 /* Use for Toggle Buttons */
 button.pressed,
 .btn.pressed,
@@ -382,17 +403,6 @@ button[aria-pressed='true'],
 [type='button'][aria-pressed='true'],
 [role='button'][aria-pressed='true'] {
   background-color: #e2e6ea;
-}
-
-button:disabled,
-.btn.disabled,
-[role='button'].disabled,
-[type='button']:disabled,
-[type='reset']:disabled,
-[type='submit']:disabled,
-[role='button']:disabled {
-  pointer-events: none;
-  opacity: 0.65;
 }
 
 button.block,
